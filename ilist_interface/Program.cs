@@ -24,6 +24,13 @@ namespace ilist_interface
             Console.ReadLine();
         }
 
-
+        static void Display(IList<int> list)
+        {
+            Console.WriteLine("Count: {0}", list.Count);
+            foreach (int num in list)
+            {
+                Console.WriteLine(num);
+            }
+        }
     }
 }
